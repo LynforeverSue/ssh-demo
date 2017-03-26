@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<!-- http://blog.csdn.net/zhqingyun163/article/details/5208766 -->
+<struts>
+  <constant name="struts.devMode" value="false"/>
+  <constant name="struts.i18n.encoding" value="utf-8"/>
+  <constant name="struts.multipart.saveDir" value="/tmp"/>
+  
+  <package name="default" namespace="/" extends="tiles-default">
+    
+    <interceptors>
+      <interceptor name="adminLoginInterceptor" class="com.hit.forecast.interceptor.AdminLoginInterceptor"/>
+    </interceptors>
+    
+    <global-results>
+      <result name="adminLogin" type="redirect">Admin_loginInput</result>
+    </global-results>
+   
+    <action name="Admin_loginInput" class="com.hit.forecast.action.AdminAction" method="loginInput">
+      <result type="tiles">tiles.adminlogin</result>
+    </action>
+    
+    <action name="Admin_login" class="com.hit.forecast.action.AdminAction" method="login">
+      <result type="redirect">showExample</result>
+      <result type="tiles" name="input">tiles.adminlogin</result>
+    </action>
+    
+    <action name="Admin_loginOut" class="com.hit.forecast.action.AdminAction" method="loginOut">
+    <interceptor-ref name="adminLoginInterceptor"/>
+      <interceptor-ref name="defaultStack"/>
+      <result type="redirect">Admin_loginInput</result>
+    </action>
+    
+    <action name="showExample" class="com.hit.forecast.action.ExampleAction" method="showExample" >
+      <interceptor-ref name="adminLoginInterceptor"/>
+      <interceptor-ref name="defaultStack"/>
+      <result type="tiles">tiles.showExample</result>
+    </action>
+   
+  </package>
+  
+  <package name="ajax" namespace="/" extends="json-default">
+    <action name="getExample" class="com.hit.forecast.action.ExampleAction" method="getExampleAjax">
+      <interceptor-ref name="alias"></interceptor-ref>
+      <param name="aliases">#{'draw':'dra','length':'len','start':'sta','search[value]' :'searchvalue','order[0][dir]' :'order0dir','order[0][column]' :'order0column'}</param>
+      <result type="json"> 
+        <param name="includeProperties">data\[\d+\]\.name,data\[\d+\]\.desc1,data\[\d+\]\.desc2,data\[\d+\]\.desc3,data\[\d+\]\.desc4,data\[\d+\]\.desc5,recordsFiltered,recordsTotal</param>
+      </result>
+    </action>
+    
+   </package>
+</struts>
