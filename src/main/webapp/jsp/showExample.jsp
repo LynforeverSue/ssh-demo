@@ -102,7 +102,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<li class="active open">
 							<a href="#" class="dropdown-toggle">
 								<i class="icon-list"></i>
-								<span class="menu-text"><font size="4">新浪微博</font></span>
+								<span class="menu-text"><font size="4">a</font></span>
 
 								<b class="arrow icon-angle-down"></b>
 							</a>
@@ -111,40 +111,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li >
 									<a href="tin">
 										<i class="icon-double-angle-right"></i>
-										博主影响力
+										b
 									</a>
 								</li>
 								<li class="active">
 									<a href="weak">
 										<i class="icon-double-angle-right"></i>
-										弱连接分析
+										c
 									</a>
 								</li>
 								<li>
 									<a href="topic">
 										<i class="icon-double-angle-right"></i>
-										热搜排行榜
+										d
 									</a>
 								</li>
 						
                                 <li >
 									<a href="weibo">
 										<i class="icon-double-angle-right"></i>
-										热度预测
+										e
 									</a>
 								</li>
 								
 								<li>
 									<a href="userinput">
 										<i class="icon-double-angle-right"></i>
-										博主管理
+										f
 									</a>
 								</li>
 								
 								<li >
 									<a href="showpara">
 										<i class="icon-double-angle-right"></i>
-										爬虫参数管理
+										g
 									</a>
 
 								</li>
@@ -163,20 +163,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li class="active">
 									<a href="weak2">
 										<i class="icon-double-angle-right"></i>
-										弱连接分析
+										a
 									</a>
 								</li>
 								
 								<li>
 									<a href="weibo2">
 										<i class="icon-double-angle-right"></i>
-										热度预测
+										b
 									</a>
 								</li>
 								<li >
 									<a href="twitteruserinput">
 										<i class="icon-double-angle-right"></i>
-										博主管理
+										c
 									</a>
 								</li>
 								
@@ -197,21 +197,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li class="active">
 									<a href="userinput">
 										<i class="icon-double-angle-right"></i>
-										博主导入
+										d
 									</a>
 								</li>
 								
 								<li>
 									<a href="tin">
 										<i class="icon-double-angle-right"></i>
-										博主影响力
+										e
 									</a>
 								</li>
 								
 								<li>
 									<a href="topic">
 										<i class="icon-double-angle-right"></i>
-										热搜排行榜
+										f
 									</a>
 								</li>
 								
@@ -221,7 +221,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<li >
 							<a href="#" class="dropdown-toggle">
 								<i class="icon-cogs"></i>
-								<span class="menu-text"><font size="4">百度贴吧</font></span>
+								<span class="menu-text"><font size="4"></font></span>
 
 								<b class="arrow icon-angle-down"></b>
 							</a>
@@ -230,21 +230,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li class="active">
 									<a href="userinput">
 										<i class="icon-double-angle-right"></i>
-										博主导入
+										a
 									</a>
 								</li>
 								
 								<li>
 									<a href="tin">
 										<i class="icon-double-angle-right"></i>
-										博主影响力
+										b
 									</a>
 								</li>
 								
 								<li>
 									<a href="topic">
 										<i class="icon-double-angle-right"></i>
-										热搜排行榜
+										c
 									</a>
 								</li>
 								
@@ -275,9 +275,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</li>
 
 							<li>
-								<a href="sinaIndex"><font size="4"><div class="text" style="line-height:40px; height:40px; vertical-align: middle">新浪微博</div></font></a>
+								<a href="sinaIndex"><font size="4"><div class="text" style="line-height:40px; height:40px; vertical-align: middle"c/div></font></a>
 							</li>
-							<li class="active"><font size="4">弱连接分析</font></li>
+							<li class="active"><font size="4">a</font></li>
 						</ul><!-- .breadcrumb -->
 						
 					</div>
@@ -285,12 +285,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="page-content">
 						<%-- <div class="page-header">
 							<h1>
-								新浪微博
+								b
 								<small>
 									<i class="icon-double-angle-right"></i>
-									博主影响力
+								d
 								</small>
-							</h1>
+							</h1>a
 						</div> --%><!-- /.page-header -->
 					
 						<div class="row">
@@ -301,7 +301,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 												
 												
 												<li class="active">
-													<a data-toggle="tab" href="#home4">个人信息</a>
+													<a data-toggle="tab" href="#home4"e</a>
 												</li>
 												
 
@@ -310,34 +310,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 											</ul>
 
 											<div class="tab-content">
-											<!--  -->
-											<div id="home44" class="tab-pane ">
-													<div class="row">
-																<div class="col-xs-12">
-																	
-																	<div class="table-header">
-																		指标体系树
-																	</div>
-																	
-							
-																	<div class="modal-body no-padding">
-																		<img src="assets/images/tree.png"/>
-																		<hr>
-																		<font size="4" >本系统为了得到更合理、更准确的博主综合影响力，以支撑社交网络特定话题信息传播分析与预测，因此，我们建立了一套科学、全面的指标体系树。利用AHP法、专家打分法等给出每一层次指标的权重，经过计算、归一化处理和数据分析等过程，最终得出博主各个领域的影响力和综合影响力。
-																		</font>
-																	</div>
-																</div>
-																
-															</div>
-															
-												</div>
-											<!--  -->
+
 												<div id="home4" class="tab-pane in active">
 													<div class="row">
 																<div class="col-xs-12">
 																	
 																	<div class="table-header">
-																		个人信息
+
 																	</div>
 																	
 							
@@ -379,36 +358,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 														<div class="col-sm-12">
 															<div class="row">
 																<div class="col-xs-11 label label-lg label-primary arrowed-in arrowed-right">
-																	<b>弱连接理论</b>
+
 																</div>
 															</div>
 
 															<div>
-																<ul class="list-unstyled  spaced">
-																<li class="divider"></li>
-																	<!-- <li >
-																		<img src="assets/images/bb.png" height="10px" width="10px"/>   数据检索的平均响应时间不超过3s
-																	</li> -->
-<li class="divider"></li>
-																	<li >
-																		<img src="assets/images/aa.png" height="10px" width="10px"/>   弱连接理论表示一种由情感强度、亲密度、互助关系等纽带形成的线性组合
-																	</li>
-<li class="divider"></li>
-																	<li >
-																		<img src="assets/images/aa.png" height="10px" width="10px"/>   弱连接是一种松散的，交互度低的，浅显的关系，类比为熟人
-																	</li>
 
-<li class="divider"></li>
-																	<li >
-																		<img src="assets/images/aa.png" height="10px" width="10px"/>   弱连接数值越高，代表非亲密好友关注得越多，最终转发量越大，信息传播范围越广
-																	</li>
-																	<li class="divider"></li>
-																	<li >
-																	<img src="assets/images/aa.png" height="10px" width="10px"/>   引入弱连接理论，能够提高系统预测模型的准确度
-																	</li>
-																	
-																	
-																</ul>
 															</div>
 														</div><!-- /.col -->
 													</div><!-- /.row -->

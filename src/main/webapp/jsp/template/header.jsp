@@ -16,7 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<a class="navbar-brand">
 						<small>
 							<i class="icon-leaf"></i>
-							在线社交网络特定话题信息传播分析系统
+							test
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
@@ -54,7 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
-									<small>欢迎光临</small>
+									<small>gg</small>
 									Admin
 								</span>
 
@@ -69,7 +69,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li>
 									<a href="Admin_loginOut">
 										<i class="icon-off"></i>
-										退出
+										锟剿筹拷
 									</a>
 								</li>
 							</ul>

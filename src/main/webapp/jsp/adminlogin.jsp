@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
+<%@ page language="java" import="java.util.*" pageEncoding=""%>
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <%
 String path = request.getContextPath();
@@ -9,21 +9,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript">
 
 $().ready(function() {
-//×ÖÄ¸Êı×Ö
+//ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½
 jQuery.validator.addMethod("alnum", function(value, element){
 return this.optional(element) ||/^[a-zA-Z0-9]+$/.test(value);
-}, "Ö»ÄÜ°üÀ¨Ó¢ÎÄ×ÖÄ¸ºÍÊı×Ö");
-//ÓÊ±à
+}, "Ö»ï¿½Ü°ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+//ï¿½Ê±ï¿½
 jQuery.validator.addMethod( "checkPost",function(value,element){     
             var pattern =/^[0-9]{6}$/;  
             if(value !=''){if(!pattern.exec(value)){return false;}};  
             return true;   
-     } ,  "  <font  color='red'>ÇëÊäÈëÓĞĞ§µÄÓÊÕş±àÂë£¡</font>" );
+     } ,  "  <font  color='red'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£¡</font>" );
        
  $("#myForm").validate(
  { 
  
-// ÑéÖ¤¹æÔò 
+// ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ 
 rules: { 
 "admin.name": { 
 required: true, 
@@ -35,19 +35,19 @@ required: true,
 required: true, 
 },
 }, 
-/* ÉèÖÃ´íÎóĞÅÏ¢ */ 
+/* ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ */ UTF-8
 messages: { 
 "admin.name": { 
-required: "<font color='red'><li>ÓÃ»§Ãû²»ÄÜÎª¿Õ</li></font>", 
+required: "<font color='red'><li>ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½</li></font>", 
 }, 
 
 "admin.password": { 
-required: "<font color='red'><li>ÃÜÂë²»ÄÜÎª¿Õ</li></font>", 
+required: "<font color='red'><li>ï¿½ï¿½ï¿½ë²»ï¿½ï¿½Îªï¿½ï¿½</li></font>", 
 },
 
 
 "vercode": { 
-required: "<font color='red'>ÑéÖ¤Âë²»ÄÜÎª¿Õ</font>", 
+required: "<font color='red'>ï¿½ï¿½Ö¤ï¿½ë²»ï¿½ï¿½Îªï¿½ï¿½</font>", 
 },
 }, 
 
@@ -84,8 +84,8 @@ background-repeat:no-repeat;
 								<h1>
 									<!-- <i class="icon-leaf green"></i> -->
 									<span style="white-space:nowrap"
-									 class="blue ">ÔÚÏßÉç½»ÍøÂçÌØ¶¨»°ÌâĞÅÏ¢´«²¥·ÖÎöÏµÍ³</span>
-									<%-- <span class="white">µÇÂ¼</span> --%>
+									 class="blue ">test gg</span>
+									<%-- <span class="white">gg</span> --%>
 								</h1>
 								<!-- <h4 class="black">&copy; hit</h4> -->
 							</div>
@@ -154,7 +154,7 @@ background-repeat:no-repeat;
 										<div class="widget-main">
 											<h4 class="header blue lighter bigger">
 												<i class="icon-coffee green"></i>
-												ÇëÊäÈëµÇÂ¼ĞÅÏ¢
+												ç”¨æˆ·ç™»é™†
 											</h4>
 
 											<div class="space-6"></div>
@@ -163,7 +163,7 @@ background-repeat:no-repeat;
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="ÓÃ»§Ãû" name="admin.name"/>
+															<input type="text" class="form-control" placeholder="ç”¨æˆ·å" name="admin.name"/>
 															<font id="f1"color="red"><s:fielderror fieldName="admin.name"></s:fielderror></font>
 															<i class="icon-user"></i>
 															
@@ -172,7 +172,7 @@ background-repeat:no-repeat;
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="ÃÜÂë" name="admin.password"/>
+															<input type="password" class="form-control" placeholder="å¯†ç " name="admin.password"/>
 															<font id="f2" color="red"><s:fielderror fieldName="admin.password"></s:fielderror></font>
 															<i class="icon-lock"></i>
 															
@@ -189,7 +189,7 @@ background-repeat:no-repeat;
  															-->
 														<button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
 															<i class="icon-key"></i>
-															µÇÂ¼
+															ç™»é™†
 														</button>
 													</div>
 
